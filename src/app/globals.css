@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Space Grotesk', Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 12%; /* #1E1E1E Dark Gray */
+    --foreground: 0 0% 96%; /* #F5F5F5 Light Gray for text */
+
+    --card: 0 0% 15%; /* Slightly lighter than background for cards */
+    --card-foreground: 0 0% 96%;
+
+    --popover: 0 0% 10%;
+    --popover-foreground: 0 0% 96%;
+
+    --primary: 220 27% 24%; /* #2E3A4E Dark Slate Blue */
+    --primary-foreground: 0 0% 96%; /* Light text on Dark Slate Blue */
+
+    --secondary: 0 0% 20%; /* A slightly lighter dark shade */
+    --secondary-foreground: 0 0% 96%;
+
+    --muted: 0 0% 20%;
+    --muted-foreground: 0 0% 60%; /* Dimmer text for muted */
+
+    --accent: 43 100% 67%; /* #FFC857 Mustard Yellow */
+    --accent-foreground: 0 0% 12%; /* Dark text on Mustard Yellow */
+
+    --destructive: 0 70% 50%; /* Red for destructive actions */
+    --destructive-foreground: 0 0% 96%;
+
+    --border: 0 0% 25%; /* Slightly visible border in dark theme */
+    --input: 0 0% 20%; /* Dark input background */
+    --ring: 43 100% 67%; /* Mustard yellow for focus rings */
+
+    --radius: 0.5rem;
+
+    /* Chart colors (dark theme appropriate) */
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+    
+    /* Sidebar variables - adjusted for dark theme consistency */
+    --sidebar-background: 0 0% 10%; /* Slightly darker than main background */
+    --sidebar-foreground: 0 0% 90%;
+    --sidebar-primary: 43 100% 67%; /* Accent for sidebar primary elements */
+    --sidebar-primary-foreground: 0 0% 12%;
+    --sidebar-accent: 0 0% 18%;
+    --sidebar-accent-foreground: 0 0% 90%;
+    --sidebar-border: 0 0% 22%;
+    --sidebar-ring: 43 100% 67%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
